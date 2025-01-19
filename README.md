@@ -285,7 +285,7 @@ class MyClass extends GUMP
         return strtoupper($value);
     }
 
-    protected function validate_myvalidator($field, array $input, array $params = [], $value)
+    protected function validate_myvalidator($field, array $input, array $params = [], $value = null)
     {
         return $input[$field] === 'good_value';
     }
